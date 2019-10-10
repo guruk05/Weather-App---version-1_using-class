@@ -3,7 +3,7 @@ const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
 
 function weatherBallon(city) {
   let cityName = document.getElementById("cityName").value;
-  // console.log(cityName);
+  console.log(cityName);
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + key)
     // console.log(cityName)  
     .then(function (resp) {
@@ -47,7 +47,12 @@ function drawWeather(d) {
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
         document.getElementById('showDegree').innerHTML = celcius;
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C' ; 
-    });
+   });
+  }
+
+  window.onload = function() {
+    // weatherBallon('chennai');
+    
   }
 
     // let d = new Date();
