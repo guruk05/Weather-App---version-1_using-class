@@ -42,13 +42,7 @@ function drawWeather(d) {
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'F';
   });
 
-        // $('&deg; F').on('click', function () {
-        //   let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
-        //   console.log(fahrenheit);
-        //   document.getElementById('showDegree').innerHTML = celcius;
-        //   document.getElementById('showFahrenheit').innerHTML = '&deg; C';
-
-        // });
+      
         $('#showFahrenheit').dblclick(function() {
         // alert('double click');
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
@@ -58,9 +52,9 @@ function drawWeather(d) {
       });
     }
 
-    let d = new Date();
+    // let d = new Date();
 
-    console.log(d.getDay())
+    // console.log(d.getDay())
 
     
 
