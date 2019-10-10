@@ -1,8 +1,12 @@
 const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
-let chennai;
+// let chennai === city
+
+window.onload = function() {
+  weatherBallon('chennai');
+}
 
 function weatherBallon(city) {
-
+  
   let cityName = document.getElementById("cityName").value;
   // console.log(cityName);
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + key)
@@ -49,9 +53,6 @@ function drawWeather(d) {
    });
   }
 
-  window.onload = function() {
-    weatherBallon(chennai);
-  }
 
     // let d = new Date();
 
