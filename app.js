@@ -4,8 +4,7 @@ window.onload = function() {
   weatherBallon('chennai');
 }
 
-function weatherBallon(city) {
-  
+function weatherBallon(city) {  
   let cityName = document.getElementById("cityName").value;
   // console.log(cityName);
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + key)
@@ -17,7 +16,6 @@ function weatherBallon(city) {
       // console.log(data);
       drawWeather(data);
       // showFahrenheit(data);
-
     })
     .catch(function () {
       // catch any errors
@@ -43,32 +41,11 @@ function drawWeather(d) {
         console.log(fahrenheit);
         document.getElementById('showDegree').innerHTML = fahrenheit;
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'F';
-  });
-      
+  });      
         $('#showFahrenheit').dblclick(function() {
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
         document.getElementById('showDegree').innerHTML = celcius;
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C' ; 
-   });
-  }
-      
-      // window.onload = function() {
-      // 	weatherBallon('chennai');
-      // }
-
-      // function showFahrenheit(){
-      //     weatherBallon(city)
-
-      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-      //     console.log(fahrenheit);
-      //     document.getElementById('showFahrenheit').innerHTML = fahrenheit; 
-      //     // console.log(fahrenheit);
-      // }
-
-      // document.getElementsByClassName("showFahrenheit")[0].addEventListener("click", function(){
-      //   degreeInput = celcius  
-      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-      //     // passing the value as a parameter to class constructor
-      //     let func=new degreeConversionCelsius(degreeInput);
-      // });
+  });
+}     
   
