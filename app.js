@@ -1,5 +1,5 @@
 const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
-let cityName;
+// let cityName;
 
 function weatherBallon(city) {
   let cityName = document.getElementById("cityName").value;
@@ -31,7 +31,7 @@ function drawWeather(d) {
 
 
   document.getElementById('showDescription').innerHTML = description;
-  document.getElementById('showDegree').innerHTML = celcius + '&deg;' 
+  document.getElementById('showDegree').innerHTML = celcius  
   document.getElementById('showCity').innerHTML = d.name;
   document.getElementById('showCountry').innerHTML = country;
 
@@ -54,7 +54,7 @@ function drawWeather(d) {
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
         // alert('double click');
         document.getElementById('showDegree').innerHTML = celcius;
-        document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C';
+        document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C' ; 
       });
 
       }
