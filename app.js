@@ -52,8 +52,9 @@ function drawWeather(d) {
         $('.Celsius').dblclick(function() {
         alert('double click');
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+        alert('double click');
         document.getElementById('showDegree').innerHTML = celcius;
-        
+
 
       });
       }
