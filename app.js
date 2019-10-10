@@ -57,7 +57,17 @@ function drawWeather(d) {
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C' ; 
       });
 
-      }
+    }
+
+    let d = new Date();
+
+    console.log(d.getDay())
+
+    
+
+
+
+    // getDate();
       
 
 

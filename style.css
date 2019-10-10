@@ -19,6 +19,9 @@ body {
     flex: 1;
 }
 
+:placeholder-shown{
+    text-align: center;
+}
 .appName {
     height: 100vh;
     display: flex;
