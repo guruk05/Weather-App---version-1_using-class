@@ -35,31 +35,49 @@ function drawWeather(d) {
   document.getElementById('showCity').innerHTML = d.name;
   document.getElementById('showCountry').innerHTML = country;
 
-$('.Celsius').on('click',function (){
-  let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-  console.log(fahrenheit);   
-  document.getElementById('showDegree').innerHTML = fahrenheit; 
-});
-}
+  $('.Celsius').on('click', function () {
+        let fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
+        console.log(fahrenheit);
+        document.getElementById('showDegree').innerHTML = fahrenheit;
+        document.getElementById('showFahrenheit').innerHTML = '&deg; F';
+  });
+
+        // $('&deg; F').on('click', function () {
+        //   let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+        //   console.log(fahrenheit);
+        //   document.getElementById('showDegree').innerHTML = celcius;
+        //   document.getElementById('showFahrenheit').innerHTML = '&deg; C';
+
+        // });
+        $('.Celsius').dblclick(function() {
+        alert('double click');
+        let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+        document.getElementById('showDegree').innerHTML = celcius;
+        
+
+      });
+      }
+      
 
 
 
-// window.onload = function() {
-// 	weatherBallon('chennai');
-// }
+      // window.onload = function() {
+      // 	weatherBallon('chennai');
+      // }
 
-// function showFahrenheit(){
-//     weatherBallon(city)
-    
-//     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-//     console.log(fahrenheit);
-//     document.getElementById('showFahrenheit').innerHTML = fahrenheit; 
-//     // console.log(fahrenheit);
-// }
+      // function showFahrenheit(){
+      //     weatherBallon(city)
 
-// document.getElementsByClassName("showFahrenheit")[0].addEventListener("click", function(){
-//   degreeInput = celcius  
-//     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-//     // passing the value as a parameter to class constructor
-//     let func=new degreeConversionCelsius(degreeInput);
-// });
+      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+      //     console.log(fahrenheit);
+      //     document.getElementById('showFahrenheit').innerHTML = fahrenheit; 
+      //     // console.log(fahrenheit);
+      // }
+
+      // document.getElementsByClassName("showFahrenheit")[0].addEventListener("click", function(){
+      //   degreeInput = celcius  
+      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+      //     // passing the value as a parameter to class constructor
+      //     let func=new degreeConversionCelsius(degreeInput);
+      // });
+  
