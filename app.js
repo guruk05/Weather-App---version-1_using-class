@@ -35,12 +35,12 @@ function drawWeather(d) {
   document.getElementById('showCity').innerHTML = d.name;
   document.getElementById('showCountry').innerHTML = country;
 
-  $('.Celsius').on('click', function () {
-        let fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
-        console.log(fahrenheit);
-        document.getElementById('showDegree').innerHTML = fahrenheit;
-        document.getElementById('showFahrenheit').innerHTML = '&deg; F';
-  });
+  // $('.Celsius').on('click', function () {
+  //       let fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
+  //       console.log(fahrenheit);
+  //       document.getElementById('showDegree').innerHTML = fahrenheit;
+  //       document.getElementById('showFahrenheit').innerHTML = '&deg; F';
+  // });
 
         // $('&deg; F').on('click', function () {
         //   let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
@@ -51,10 +51,12 @@ function drawWeather(d) {
         // });
         $('.Celsius').dblclick(function() {
         alert('double click');
-        let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
-        alert('double click');
-        document.getElementById('showDegree').innerHTML = celcius;
+        // let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+        // alert('double click');
+        // document.getElementById('showDegree').innerHTML = celcius;
+        // document.getElementById('showFahrenheit').innerHTML = '&deg; F';
       });
+
       }
       
 
