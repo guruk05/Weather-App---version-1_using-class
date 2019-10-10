@@ -56,7 +56,6 @@ function drawWeather(d) {
         document.getElementById('showDegree').innerHTML = celcius;
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C' ; 
       });
-
     }
 
     let d = new Date();
