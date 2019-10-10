@@ -39,7 +39,7 @@ function drawWeather(d) {
         let fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
         console.log(fahrenheit);
         document.getElementById('showDegree').innerHTML = fahrenheit;
-        document.getElementById('showFahrenheit').innerHTML =  'F';
+        document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'F';
   });
 
         // $('&deg; F').on('click', function () {
@@ -54,7 +54,7 @@ function drawWeather(d) {
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
         // alert('double click');
         document.getElementById('showDegree').innerHTML = celcius;
-        document.getElementById('showFahrenheit').innerHTML =  'C';
+        document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C';
       });
 
       }
