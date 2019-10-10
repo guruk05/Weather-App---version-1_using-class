@@ -2,7 +2,7 @@ const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
 let chennai;
 
 function weatherBallon(city) {
-  
+
   let cityName = document.getElementById("cityName").value;
   // console.log(cityName);
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + key)
@@ -28,7 +28,6 @@ function drawWeather(d) {
   let description = d.weather[0].description;
   console.log(d)
   let country = d.sys.country;
-  //   console.log(d.name);
 
 
   document.getElementById('showDescription').innerHTML = description;
@@ -42,7 +41,6 @@ function drawWeather(d) {
         document.getElementById('showDegree').innerHTML = fahrenheit;
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'F';
   });
-
       
         $('#showFahrenheit').dblclick(function() {
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
