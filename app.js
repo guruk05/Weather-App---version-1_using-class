@@ -1,5 +1,5 @@
 const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
-// let cityName;
+let chennai;
 
 function weatherBallon(city) {
   let cityName = document.getElementById("cityName").value;
@@ -51,7 +51,7 @@ function drawWeather(d) {
   }
 
   window.onload = function() {
-    // weatherBallon('chennai');
+    weatherBallon('chennai');
     
   }
 
