@@ -1,8 +1,10 @@
+
+
 const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
 
-window.onload = function() {
-  weatherBallon('chennai');
-}
+// window.onload = function() {
+//   weatherBallon('chennai');
+// }
 
 function weatherBallon(city) {  
   let cityName = document.getElementById("cityName").value;
@@ -47,5 +49,24 @@ function drawWeather(d) {
         document.getElementById('showDegree').innerHTML = celcius;
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C' ; 
   });
-}     
+}      
+      // window.onload = function() {
+      // 	weatherBallon('chennai');
+      // }
+
+      // function showFahrenheit(){
+      //     weatherBallon(city)
+
+      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+      //     console.log(fahrenheit);
+      //     document.getElementById('showFahrenheit').innerHTML = fahrenheit; 
+      //     // console.log(fahrenheit);
+      // }
+
+      // document.getElementsByClassName("showFahrenheit")[0].addEventListener("click", function(){
+      //   degreeInput = celcius  
+      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+      //     // passing the value as a parameter to class constructor
+      //     let func=new degreeConversionCelsius(degreeInput);
+      // });
   
