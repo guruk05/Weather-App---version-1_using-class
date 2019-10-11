@@ -9,7 +9,7 @@ function getWeather(city) {
     }) // Convert data to json
     .then(function (data) {
       // console.log(data);
-      drawWeather(data);
+      drawWeather(data); 
     })
     .catch(function () {
       // catch any errors
@@ -24,6 +24,7 @@ function drawWeather(d) {
   console.log(d)
   let country = d.sys.country;
 
+// Displaying weather data 
 
   document.getElementById('showDescription').innerHTML = description;
   document.getElementById('showDegree').innerHTML = celcius  
