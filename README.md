@@ -9,3 +9,5 @@ Weather application developed to view the weather details of various cities
 # Built with
 
 HTML
+CSS
+JAVASCRIPT
