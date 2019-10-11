@@ -17,7 +17,7 @@ function getWeather(city) {
 
 
 function drawWeather(d) {
-  let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+  let celcius = Math.round(parseFloat(d.main.temp) - 273.15); 
   let description = d.weather[0].description;
   let country = d.sys.country;
 
@@ -42,7 +42,7 @@ function drawWeather(d) {
         $('#showFahrenheit').dblclick(function() {
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
         document.getElementById('showDegree').innerHTML = celcius;
-        document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C' ; 
+        document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'C'; 
   });
 }      
       // window.onload = function() {
