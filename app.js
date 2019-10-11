@@ -10,7 +10,6 @@ const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
 
 function getWeather(city) {  
   let cityName = document.getElementById("cityName").value;
-  // console.log(cityName);
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + key)
     // console.log(cityName)  
     .then(function (resp) {
