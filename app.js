@@ -47,8 +47,7 @@ function drawWeather(d) {
       // 	weatherBallon('chennai');
       // }
 
-      // function showFahrenheit(){
-      //     weatherBallon(city)
+ 
 
       
 
