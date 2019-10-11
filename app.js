@@ -50,11 +50,7 @@ function drawWeather(d) {
       // function showFahrenheit(){
       //     weatherBallon(city)
 
-      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-      //     console.log(fahrenheit);
-      //     document.getElementById('showFahrenheit').innerHTML = fahrenheit; 
-      //     // console.log(fahrenheit);
-      // }
+      
 
       
   
