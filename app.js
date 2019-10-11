@@ -56,10 +56,5 @@ function drawWeather(d) {
       //     // console.log(fahrenheit);
       // }
 
-      // document.getElementsByClassName("showFahrenheit")[0].addEventListener("click", function(){
-      //   degreeInput = celcius  
-      //     let fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-      //     // passing the value as a parameter to class constructor
-      //     let func=new degreeConversionCelsius(degreeInput);
-      // });
+      
   
