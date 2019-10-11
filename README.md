@@ -11,3 +11,4 @@ Weather application developed to view the weather details of various cities
 HTML
 CSS
 JAVASCRIPT
+JQUERY
