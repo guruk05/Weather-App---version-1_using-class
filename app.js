@@ -10,7 +10,6 @@ function getWeather(city) {
     .then(function (data) {
       // console.log(data);
       drawWeather(data);
-      // showFahrenheit(data);
     })
     .catch(function () {
       // catch any errors
