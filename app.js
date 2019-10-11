@@ -40,6 +40,7 @@ function drawWeather(d) {
         document.getElementById('showFahrenheit').innerHTML = '&deg;' + 'F';
   });
   
+// Displaying celcius data 
 
         $('#showFahrenheit').dblclick(function() {
         let celcius = Math.round(parseFloat(d.main.temp) - 273.15);
