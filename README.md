@@ -14,3 +14,5 @@ JAVASCRIPT
 JQUERY
 
 # Description
+
+This Application provides users with weather details of various cities.
