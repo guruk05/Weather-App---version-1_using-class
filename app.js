@@ -1,5 +1,5 @@
 
-const key = '2ebbc925a11c3ea05fe72bb48f8ad49d';
+const key = '2ebbc925a11c3ea05fe72bb48f8ad49d'; 
 
 function getWeather(city) {  
   let cityName = document.getElementById("cityName").value; // Getting user search values
@@ -12,7 +12,6 @@ function getWeather(city) {
       drawWeather(data); 
     })
     .catch(function () {
-      // catch any errors
     });
 }
 
