@@ -8,7 +8,7 @@ Weather application developed using Es5 classes and objects to view the weather 
 
 # Built with
 
-HTML
+* HTML
 CSS
 JAVASCRIPT
 JQUERY
