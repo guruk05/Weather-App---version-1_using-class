@@ -9,7 +9,7 @@ Weather application developed using Es5 classes and objects to view the weather 
 # Built with
 
 * HTML
-CSS
+* CSS
 JAVASCRIPT
 JQUERY
 
