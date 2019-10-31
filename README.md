@@ -11,7 +11,7 @@ Weather application developed using Es5 classes and objects to view the weather 
 * HTML
 * CSS
 * JAVASCRIPT
-JQUERY
+* JQUERY
 
 # Description
 
